@@ -1,0 +1,54 @@
+{
+	"name": "Perfix",
+	"version": "1.0",
+	"description" : "demo ext",
+	"manifest_version": 2,
+	"content_scripts": [
+		{
+			"css": [
+				"lib/css/bootstrap.css",
+				"lib/css/jqueryui.css",
+				"style.css"
+			],
+			"matches": [
+				"https://ideamaker.agency/", 
+				"http://ideamaker.agency/", 
+				"https://www.ideamaker.agency/",
+				"http://www.ideamaker.agency/"
+			],
+			"js": [
+				"lib/js/jquery.js",
+				"lib/js/jqueryui.js",
+				"lib/js/bootstrap_bundle.js",
+				"content.js"
+			]
+		}
+	],
+	"browser_action": {
+		"default_popup": "popup.html",
+		"default_title": "Perfix"
+	},
+	"background" : {
+		"scripts": []
+	},
+	"permissions": [
+		"tabs",
+		"https://ideamaker.agency/", 
+		"http://ideamaker.agency/", 
+		"https://www.ideamaker.agency/",
+		"http://www.ideamaker.agency/",
+		"http://127.0.0.1:8000/"
+	],
+	"web_accessible_resources" : [
+		"ui.html",
+		"lib/css/bootstrap.css",
+		"lib/css/jqueryui.css",
+		"style.css",
+		"lib/js/jquery.js",
+		"lib/js/jqueryui.js",
+		"lib/js/popper.js",
+		"lib/js/bootstrap.js",
+		"lib/js/bootstrap_bundle.js",
+		"ui.js"
+	]
+}

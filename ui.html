@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> Perfix </title>
+</head>
+<body>
+
+	
+		    <div class="popupmain col-md-12">
+
+				<ul class="nav nav-tabs" id="myTab" role="tablist">
+				  <li class="nav-item">
+				    <a class="nav-link active" id="load-tab" data-toggle="tab" href="#load" role="tab" aria-controls="load" aria-selected="true">Load</a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link" id="create-tab" data-toggle="tab" href="#create" role="tab" aria-controls="create" aria-selected="false">Create & Edit</a>
+				  </li>
+				</ul>
+				<div class="tab-content" id="myTabContent">
+				  <div class="tab-pane fade show active" id="load" role="tabpanel" aria-labelledby="load-tab"> 
+				     	<div id="output"> </div>
+				  </div>
+				  <div class="tab-pane fade" id="create" role="tabpanel" aria-labelledby="create-tab">
+				  	<!-- start nested tab -->
+				  	<ul class="nav nav-tabs" style="display:none" id="bigTab" role="tablist">
+					  <li class="nav-item">
+					    <a class="nav-link active" data-toggle="tab" href="#general-create" role="tab" id="general-create-tab"  aria-controls="general-create-tab">Bigtab1</a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="nav-link" data-toggle="tab" href="#create-tut-1" role="tab" id="create-tut-1-tab"  aria-controls="create-tut-1-tab">Bigtab2</a>
+					  </li>
+					   <li class="nav-item">
+					    <a class="nav-link" data-toggle="tab" href="#create-tut-2" role="tab" id="create-tut-2-tab"  aria-controls="create-tut-2-tab">Bigtab2</a>
+					  </li>
+					</ul>
+					<div class="tab-content" id="myTabContent2">
+				  		<div class="tab-pane fade show active" id="general-create" role="tabpanel" aria-labelledby="general-create-tab">
+					  		<div class="twentypadding">
+					        	<button id="createtut"> Create New Tutorial </button> <br><br>
+					        	<button id="edittut"> Edit Existing Tutorial </button>
+					  		</div>
+					  	</div>
+					  	<div class="tab-pane fade" id="create-tut-1" role="tabpanel" aria-labelledby="create-tut-1-tab">
+					  		<a href="#" id="back-to-general-create"> Go Back </a>
+					  		<div class="twentypadding">
+					  			<h3> Tutorial Name? </h3>
+					  			<input type="text" id="title" placeholder="title" />
+					  			<button id="create-tut-1-next"> Save and Continue </button>
+					  		</div>
+					  	</div>
+					  	<div class="tab-pane fade" id="create-tut-2" role="tabpanel" aria-labelledby="create-tut-2-tab">
+					  		<a href="#" id="back-to-create-tut-1"> Go Back </a>
+					  		<div class="twentypadding">
+					  			<button id="add-slide"> + Add Slide </button>
+					  			<div id="add-slide-form" style="display:none">
+					  				<button type="button" class="btn" id="pick-element"> Pick Element </button>
+					  				<input type="text" id="xpath" placeholder="xpath" />
+					  				<input type="text" id="text" placeholder="text" />
+					  				<button id="save-slide"> Save </button>	
+					  			</div>
+					  			<div id="slide-reel">
+					  				
+					  			</div>
+					  		</div>
+					  	</div>
+					</div>
+				  </div>
+				</div>
+
+				
+			</div>
+
+
+	
+	
+
+</body>
+</html>

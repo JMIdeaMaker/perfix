@@ -1,0 +1,56 @@
+.popupmain{
+	width:500px; 
+	height:250px;
+	padding:20px;
+	position:absolute;
+	top: 0;
+	left: 0;
+	z-index:10000;
+	background:white;
+	border:1px solid #aaa;
+}
+#savedtuts{
+	padding:20px;
+}
+.twentypadding{
+	padding:20px;
+}
+.slide-reel-item{
+	border:1px solid #aaa;
+	background:#ddd;
+	font-size:11px;
+}
+.saved-tut-item{
+	border:1px solid #999;
+	background:#ddd;
+	font-size:11px;
+	color: blue;
+	cursor:pointer;
+}
+.show-slide-class{
+	box-shadow: 10px 10px 51px -5px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 51px -5px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 10px 10px 51px -5px rgba(0,0,0,0.75);
+}
+.fancypopover{
+	font-size:13px;
+}
+
+.poppy {
+    position: relative;
+    z-index: 200!important;
+}
+
+.blanket {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background:black;
+    opacity: 0.5;
+    z-index: 1;
+}
+.hoverborder{
+	border:1px solid #111;
+}
